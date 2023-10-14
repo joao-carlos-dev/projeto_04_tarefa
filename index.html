@@ -6,7 +6,73 @@
     <title>Document</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__content__logo">
+                <img src="./dist/images/logo.png" alt="Supernatural">
+            </h1>
+        </div>
+    </header>
+    <section class="hero">
+        <h1 class="title">Temporadas de Sobrenatural</h1>
+    </section>
+
+    <section class="temp">
+        <nav class="temp__tabs" >
+            <button data-tab-button="temp_1" class="temp__tabs__button temp__tabs__button--is-active">
+                1ª Temporada
+            </button>
+
+            <button data-tab-button="temp_2" class="temp__tabs__button">
+                2ª Temporada
+            </button>
+
+            <button data-tab-button="temp_3" class="temp__tabs__button">
+                3ª Temporada
+            </button>
+
+            <button data-tab-button="temp_4" class="temp__tabs__button">
+                4ª Temporada
+            </button>
+
+            <button data-tab-button="temp_5" class="temp__tabs__button">
+                5ª Temporada
+            </button>
+        </nav>
+
+        <ul data-tab-id="temp_1" class="temp__list temp__list--is-active">
+            <li class="temp__list__item">
+                <img src="./dist/images/temp_01.jpg" alt="Banner da Temporada">
+            </li>
+        </ul>
+
+        <ul data-tab-id="temp_2" class="temp__list">
+            <li class="temp__list__item">
+                <img src="./dist/images/temp_02.jpg" alt="Banner da Temporada">
+            </li>
+        </ul>
+
+        <ul data-tab-id="temp_3" class="temp__list">
+            <li class="temp__list__item">
+                <img src="./dist/images/temp_03.jpg" alt="Banner da Temporada">
+            </li>
+        </ul>
+
+        <ul data-tab-id="temp_4" class="temp__list">
+            <li class="temp__list__item">
+                <img src="./dist/images/temp_04.jpg" alt="Banner da Temporada">
+            </li>
+        </ul>
+
+        <ul data-tab-id="temp_5" class="temp__list">
+            <li class="temp__list__item">
+                <img src="./dist/images/temp_05.jpg" alt="Banner da Temporada">
+            </li>
+        </ul>
+    </section>
+
+    <script src="src/scripts/main.js" ></script>
 </body>
 </html>
