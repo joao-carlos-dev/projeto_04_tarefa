@@ -38,8 +38,8 @@ body {
     @include text;
 }
 
-.title--big {
-    @include title(44px);
+.title--pqueno {
+    @include title(32px);
 }
 
 .title {

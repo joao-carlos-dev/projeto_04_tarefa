@@ -1,14 +1,17 @@
 @use 'variaveis';
-
+    
 .temp {
     min-height: 65vw;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
 
     &__sinopse {
         color: variaveis.$corTextoPrincipal;
         text-align: justify;
         padding-left: 5px;
 
-        @media (max-width:  768px) {
+        @media screen and (min-width: 360px) and (max-width:820px) {
             padding-left: 0;
         }
 
@@ -21,9 +24,6 @@
         gap: 10px;
         margin-top: 5px;
 
-        @media (max-width:  768px) {
-            display: block;
-        }
 
     }
 
@@ -33,14 +33,18 @@
         grid-template-columns: 1fr 1fr 1fr;
         padding-left: 300px;
 
-        @media (max-width:  768px) {
-            padding-left: 0;
-            display: block;
-        }
-
 
         &--is-active {
                 display: grid;
+
+                @media screen and (min-width: 360px) and (max-width:820px) {
+                    padding-left: 0;
+                    display: block;
+
+                    .temp__list__item img {
+                        width: 80%;
+                    }
+                }
             }
 
 
@@ -56,10 +60,11 @@
         display: flex;
         justify-content: center;
 
-        @media (max-width: 768px) {
+        @media screen and (min-width: 360px) and (max-width:820px) {
             white-space: nowrap;
             overflow-x: scroll;
             padding-left: 20px;
+            font-size: 10px;
         }    
         
         &__button {
@@ -72,6 +77,10 @@
             margin: 0 1vw;
             cursor: pointer;
             border-bottom: 5px solid transparent;
+
+            @media screen and (min-width: 360px) and (max-width:820px) {
+                font-size: 16px;
+            }
 
             &:hover {
                 color: lighten(variaveis.$corTextoSecundario, 15%);

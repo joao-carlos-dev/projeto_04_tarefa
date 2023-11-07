@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
     
-    //seção de atrações, programação das abas
+    //seção temporadase, programação das abas
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function(botao) {
             const abaAlvo = botao.target.dataset.tabButton;
